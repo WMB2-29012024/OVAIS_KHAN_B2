@@ -4,10 +4,7 @@
 
 const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
 
-let newArr = ""
-
 for (let i = 0 ; i < numArr.length; i +=2){
- newArr += numArr[i]
+    console.log (newArr[1]);
 }
 
-console.log (newArr)
