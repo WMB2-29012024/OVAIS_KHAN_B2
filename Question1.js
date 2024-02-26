@@ -6,6 +6,6 @@ const numArr = [1, 234_45, 89,75, 4e9]
 const strArr = ["asd", "qwe", "ert", "asdasdzxczxc"]
 const mixArr = ["first", "234_45", {first: "Web", last: "Masters"}, true]
 
-for (let i = 0; i < numArr.length; i++) {
+for (let i = 0; i <numArr.length; i++) {
 console.log(numArr[i]);
 }
