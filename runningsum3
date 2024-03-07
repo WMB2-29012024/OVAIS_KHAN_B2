@@ -1,0 +1,21 @@
+let sums1 = [2,5,1,6];
+
+let arr = [];
+let sum = 0;
+
+function rightsum(arr,startInd){
+    for(let j = 1; j<s.length; j++ )
+      sum = arr[i]
+} return sum;
+
+function sumdifference (s){
+for(let i=0; i<s.length; i++){
+
+    }
+}
+
+
+function leftsum(arr,startInd){
+    for(let k = 0; j<s.length-1; j-- )
+      sum = arr[i]
+} return sum;
