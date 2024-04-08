@@ -25,8 +25,6 @@ async function finaldataFunction(API) {
 }
 
 button.addEventListener("click",function(){
-// pElem.innerHTML = `<div id="container">
-// <div id="loader"></div>
-// </div>`
+
 finaldataFunction(API)
 })
