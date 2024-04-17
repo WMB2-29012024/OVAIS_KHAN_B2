@@ -1,0 +1,23 @@
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+}
+button{
+    background-color: cornflowerblue;
+    border: none;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#comment-box{
+    resize: both;
+}
