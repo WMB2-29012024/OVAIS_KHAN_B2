@@ -1,32 +1,22 @@
-const timeInput = document.getElementById("timeinput");
+const timeInput = document.getElementById("time-input");
 const display = document.querySelector(".display");
-const pausebtn = document.getElementById("Pausebtn");
-
-// pausebtn.addEventListener("click", function(){
-//     clearInterval(timer);
-//     remainingTime = 0;
-// });
 
 let remainingTime = 0;
+let start = true;
 let timer;
 
 const startTimer = () => {
-  if (timer) {
-    clearInterval(timer);
-    remainingTime = 0;
+  if(timer){
+    clearInterval(timer)
   }
-
-  remainingTime = remainingTime || timeInput.value;
+  if (start) {
+    remainingTime = timeInput.value;
+  } else {
+    remainingTime;
+  }
   timer = setInterval(() => {
     updateTime();
   }, 1000);
-};
-
-const stopTimer = (timer) => {
-  if (timer) {
-    clearInterval(timer);
-    remainingTime = 0;
-  }
 };
 
 const updateTime = () => {
@@ -41,10 +31,27 @@ const updateTime = () => {
 const displayTime = () => {
   const hours = Math.floor(remainingTime / 3600);
   const minutes = Math.floor((remainingTime % 3600) / 60);
-  const seconds = remainingTime % 60;
-  display.innerText = `${hours.toString().padStart(2, "0")}:${minutes
+  const seconds = Math.floor(remainingTime % 60);
+  display.innerHTML = `${hours.toString().padStart(2, "0")}:${minutes
     .toString()
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 };
+
+const pauseTimer = () => {
+  clearInterval(timer);
+  start = false;
+};
+
+const pauseBtn = document.getElementById("pause");
+pauseBtn.addEventListener("click", pauseTimer);
+
+const resetBtn = document.getElementById("reset");
+resetBtn.addEventListener("click", () => {
+  remainingTime = 0;
+  clearInterval(timer);
+  timeInput.value = "";
+  display.innerHTML = "00:00:00";
+  start = true;
+});
+
 export { startTimer };
-export { stopTimer };
