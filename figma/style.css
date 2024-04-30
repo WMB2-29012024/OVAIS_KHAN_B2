@@ -1,0 +1,134 @@
+.main-container{
+    border: 1px solid red;
+  
+    
+}
+.navbar{
+    display: flex;
+    border: 1px solid rgb(43, 255, 0);
+    height: 60px;
+    width: 100%;
+    gap:400px
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    gap:30px;
+    height: 31px;
+    width: 381px;
+}
+h3{
+    margin-left: 100px;
+}
+p{
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width:100%;
+    height:100%;
+    color: white;
+  
+}
+.box{
+    padding: 20px;
+    background-color: black;
+    width: 491px;
+    height: 647px;
+    border-radius: 12px;
+}
+.box2{
+    height: 667px;
+    width: 535px;
+    border-radius: 12px;
+    border: 1px solid blue;
+}
+.form{
+    padding: 20px;
+    width: 297px;
+    gap: 20px;
+   
+    border: 1px solid rgb(26, 172, 62);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.text{
+    height: 55px;
+    width: 278px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid rgb(186, 147, 31);
+}
+.text55{
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.box-clumn{
+    height: 50px;
+    width: 278px;
+    margin: 50px 20px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content:space-between;
+
+    border-bottom: 1px solid gray;
+
+    >label{
+        color: rgba(0, 0, 0, 0.515);
+    }
+}
+input{
+    border: none;
+}
+
+.send{
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    margin: 22px 0 0 270px ;
+    height: 54px;
+    width: 214px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: black;
+}
+.radio-box{
+    margin: 0 0 0 50px;
+}
+.radio{
+    display: flex;
+}
+.rt{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+.inquiry{
+    color: rgb(0, 0, 0);
+    >span{
+    font-size:13px;
+}
+}
