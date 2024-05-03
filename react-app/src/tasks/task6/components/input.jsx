@@ -1,9 +1,22 @@
+const Input = () => {
+  const handleButtonChange = (e) => {
+    const valuetrue = e.target.value;
+    console.log(valuetrue);
+    
+  };
 
-const Input = () =>{
-    // const handleButtonChange = (e) => {
-    //   const valuetrue = e.target.text.value
-    // }
+  return (
+    <div>
+      <input
+        type="text"
+   
+        placeholder="Enter Text"
+        onChange={handleButtonChange}
 
-    // return <input type="text" value={text} placeholder="Enter Text" onChange={handleButtonChange} />
+      />
+      {/* <div>{valuetrue}</div> */}
+      
+    </div>
+  );
 };
-export default Input ;
+export default Input;

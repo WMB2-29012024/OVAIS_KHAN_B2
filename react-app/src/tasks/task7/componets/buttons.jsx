@@ -1,7 +1,7 @@
 const Button = ({btnClick}) =>{
 
        return (
-       <button onClick={btnClick}
+       <button  onClick={btnClick}
     >Clickme!/</button>
 )
 
