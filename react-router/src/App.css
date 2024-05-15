@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+  height: 70px;
+  background-color: aqua;
+}
+.box{
+  height: 800px;
+  background-color: red;
+}
