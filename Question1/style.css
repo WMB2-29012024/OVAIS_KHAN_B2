@@ -1,0 +1,27 @@
+.main {
+  height: 800px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  background: blue;
+  color: white;
+}
+.top {
+    height: 20px;
+    width: 80px;
+    background-color: rgba(35, 32, 37, 0.203);
+    display:none;
+}
+.bottom {
+  height: 20px;
+  width: 80px;
+  background-color: rgba(35, 32, 37, 0.203);
+  display: none;
+}
+.btn1:hover {
+
+}
