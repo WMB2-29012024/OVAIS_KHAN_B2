@@ -1,0 +1,36 @@
+
+.table-header{
+    height: 50px;
+    width:1200px ;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+thead{
+    margin: 5px;
+    border: 1px solid black;
+}
+tbody{
+    margin: 2px;
+    border: 1px solid black;
+}
+th{
+    height:20px;
+    width:100px;
+}
+td{
+    height:20px;
+    width:100px;
+    text-align: center;
+}
+tr{
+    width: 1200px;
+}
