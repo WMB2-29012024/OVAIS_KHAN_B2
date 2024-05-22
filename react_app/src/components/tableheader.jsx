@@ -5,6 +5,8 @@ const Tableheader = () => {
     return (
       <div className="table-header">
         <tr>
+          
+        <div className="flex-box">
           <th>User Id</th>
           <th>Name</th>
           <th>User Name</th>
@@ -13,6 +15,7 @@ const Tableheader = () => {
           <th>City</th>
           <th>Suit</th>
           <th>Action</th>
+          </div>
         </tr>
       </div>
     );

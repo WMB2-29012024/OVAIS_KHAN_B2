@@ -1,15 +1,15 @@
-import React from "react";
 import "./table.css"
+import Edit from "./edit";
+import Delete from "./delete";
 
 const Table = ({data}) => {
-    console.log(data)
   return (
   <>
-    {data.map((list)=>{
+    {data.map((list,idx)=>{
      return(
-        <div>
               <tbody>
-                <tr>
+                <tr key={(idx)}>
+                  <div className="flex-box">
                     <td>{list.id}</td>
                     <td>{list.name}</td>
                     <td>{list.username}</td>
@@ -17,11 +17,18 @@ const Table = ({data}) => {
                     <td>{list.phone}</td>
                     <td>{list.address.city}</td>
                     <td>{list.address.suite}</td>
-                    <td><img src="./images/Frame 14.svg" alt="" /></td>
+                    <td>
 
+                   
+                      <div className="flex">
+                      <Edit/>
+                     <Delete data={data} idx={idx}/>
+                     </div>
+                     
+                    </td>
+                    </div>
                 </tr>
               </tbody>
-      </div>
      )
     })}
    
