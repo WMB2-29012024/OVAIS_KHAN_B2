@@ -1,39 +1,25 @@
 import "./deletePopup.css";
-import { useState } from "react";
+import { useContext } from "react";
+import { PropContext } from "../App";
 
 const DeleteUserModal = ({ setStyle, style, idx, data }) => {
-  // const [selectedIdx, setSelectedIdx] = useState(null);
-  // const [newdata , setNewData] =useState(data)
+  const { setData } = useContext(PropContext);
 
-  // const openModal = (idx) => {
-  //   setSelectedIdx(idx);
-  //   setStyle("block");
-  // };
-
-  const closeModal = () => {
+  const onDelete = () => {
+    const updatedData = data.filter((_, index) => index !== idx);
+    setData(updatedData);
     setStyle("none");
   };
 
-  // const onClose = () => {
-  //   if (style === "none") {
-  //     setStyle("block");
-  //   }
-  const onDelete = () => {
-
-      updatedData.splice(1, 1);
-      console.log(newdata)
-      
-  
+  const onClose = () => {
+    setStyle("none");
   };
-
 
   return (
     <div className="modal" style={{ display: style }}>
       <div className="icon">
         <img src="./images/trash-2 2.svg" alt="Delete Icon" />
-        <button className="close-btn">
-          ╳
-        </button>
+        <button className="close-btn" onClick={onClose}>╳</button>
       </div>
       <h2>Delete User?</h2>
       <p>
@@ -43,7 +29,7 @@ const DeleteUserModal = ({ setStyle, style, idx, data }) => {
         <button className="delete-btn" onClick={onDelete}>
           Delete
         </button>
-        <button className="cancel-btn" >
+        <button className="cancel-btn" onClick={onClose}>
           Cancel
         </button>
       </div>

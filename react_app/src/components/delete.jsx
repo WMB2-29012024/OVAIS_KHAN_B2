@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DeleteUserModal from './deletePopup';
 
-const Delete = ({data,idx}) => {
+const Delete = ({data,setData,idx}) => {
     const [style ,setStyle] = useState("none")
 
     const tableDeleteBtn =() => {
@@ -13,7 +13,7 @@ const Delete = ({data,idx}) => {
     }
   return (
     <div onClick={tableDeleteBtn}><img src="./images/trash-2 2.svg" alt="/"/>
-    <DeleteUserModal setStyle={setStyle} style={style} data={data} idx={idx}/>
+    <DeleteUserModal setStyle={setStyle} style={style} data={data} setData={setData} idx={idx}/>
     </div>
   )
 }
